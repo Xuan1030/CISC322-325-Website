@@ -1,224 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>CISC326/CISC322</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0"/>
-    <meta name="description" content="Author: 3Designs, Category: 3D Webdesign"/>
-    <meta name="theme-color" content="#141414"/>
-		<link type="text/css" rel="stylesheet" href="./styles/main.css"/>
-		<link type="text/css" rel="stylesheet" href="./styles/slider.css"/>
-		<link type="text/css" rel="stylesheet" href="./styles/components.css"/>
-    <link rel="icon" type="image/png" href="./resources/ima   ges/favicon.ico"/>
-	</head>
-	<body>
-	   
-    <!-- MAIN UI ELEMENTS -->
-    <main class="ui-wrapper page-not-loaded">
-      <!-- LOADER -->
-      <div class="loader flex flex--center">
-        <span class="loader__text">CISC326/322</span>
+
+<head>
+  <title>CISC326/CISC322</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="Author: 3Designs, Category: 3D Webdesign" />
+  <meta name="theme-color" content="#141414" />
+  <link type="text/css" rel="stylesheet" href="./styles/main.css" />
+  <link type="text/css" rel="stylesheet" href="./styles/slider.css" />
+  <link type="text/css" rel="stylesheet" href="./styles/components.css" />
+  <link rel="icon" type="image/png" href="./resources/ima   ges/favicon.ico" />
+</head>
+
+<body>
+  
+  <!-- MAIN UI ELEMENTS -->
+  <main class="ui-wrapper page-not-loaded">
+    <!-- LOADER -->
+    <div class="loader flex flex--center">
+      <span class="loader__text">CISC326/322</span>
+    </div>
+    <!-- MAIN MENU -->
+    <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-list__item" data-page="1">ASSIGNMENT</li>
+        <li class="menu-list__item" data-page="2">MEET THE TEAM</li>
+        <li class="menu-list__item" data-page="3">LINKS</li>
+        <li class="menu-list__item" data-page="4">CONTACT US</li>
+      </ul>
+    </div>
+    <!-- VIDEO POPUP -->
+    <div class="popup" data-popup="video">
+      <div class="popup__inner video__inner">
+        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <!-- If you have Youtube video or any external video, use iframe above. Otherwise use video element below; -->
+        <!-- <video id="video" src="./path-to-video"></video> -->
       </div>
-      <!-- MAIN MENU -->
-      <div class="menu">
-        <ul class="menu-list">
-          <li class="menu-list__item" data-page="1">ASSIGNMENT</li>
-          <li class="menu-list__item" data-page="2">MEET THE TEAM</li>
-          <li class="menu-list__item" data-page="3">LINKS</li>
-          <li class="menu-list__item" data-page="4">CONTACT US</li>
-        </ul>
-      </div>
-      <!-- VIDEO POPUP -->
-      <div class="popup" data-popup="video">
-        <div class="popup__inner video__inner">
-          <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          <!-- If you have Youtube video or any external video, use iframe above. Otherwise use video element below; -->
-          <!-- <video id="video" src="./path-to-video"></video> -->
+    </div>
+    <!-- OFFERS POPUP -->
+    <div class="popup" data-popup="offers">
+      <div class="popup__inner">
+        <h2 class="popup__title">WHAT WE OFFER</h2>
+        <h2 class="popup__subtitle">Some of the things we do</h2>
+        <div class="popup__content popup__offers">
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Assignmnet 1</h3>
+            <ul>
+              <li>Facbook adsss</li>
+              <li>Instagram ads</li>
+              <li>Google ads</li>
+              <li>Leaflet</li>
+            </ul>
+          </div>
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Analytics</h3>
+            <ul>
+              <li>Google Analytics</li>
+              <li>Firebase</li>
+              <li>Data science</li>
+              <li>Dashboard</li>
+            </ul>
+          </div>
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Consulting</h3>
+            <ul>
+              <li>Growth</li>
+              <li>First business</li>
+              <li>Startup</li>
+            </ul>
+          </div>
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Research</h3>
+            <ul>
+              <li>Market research</li>
+              <li>Competition reserach</li>
+              <li>Product reserach</li>
+            </ul>
+          </div>
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Developing</h3>
+            <ul>
+              <li>WEB Design</li>
+              <li>WEB apps</li>
+              <li>Mobile apps</li>
+              <li>Smart home apps</li>
+            </ul>
+          </div>
+          <div class="popup__offer">
+            <h3 class="popup__offer-title">Product growing</h3>
+            <ul>
+              <li>Influencers</li>
+              <li>Invests</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- OFFERS POPUP -->
-      <div class="popup" data-popup="offers">
-        <div class="popup__inner">
-          <h2 class="popup__title">WHAT WE OFFER</h2>
-          <h2 class="popup__subtitle">Some of the things we do</h2>
-          <div class="popup__content popup__offers">
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Assignmnet 1</h3>
-              <ul>
-                <li>Facbook adsss</li>
-                <li>Instagram ads</li>
-                <li>Google ads</li>
-                <li>Leaflet</li>
-              </ul>
+    </div>
+    <!-- TEAM POPUP -->
+    <div class="popup" data-popup="team">
+      <div class="popup__inner">
+        <h2 class="popup__title">PEOPLE BEHIND THIS</h2>
+        <h3 class="popup__subtitle">Good team does not exist without good people</h3>
+        <div class="slider">
+          <div class="slider__arrow slider__arrow-left slider__arrow--disabled" data-follow="centered_y">
+            <img class="slider__arrow-icon" src="./resources/images/icons/arrow.svg" alt="Arrow icon" />
+          </div>
+          <div class="slider__arrow slider__arrow-right" data-follow="centered_y">
+            <img class="slider__arrow-icon" src="./resources/images/icons/arrow.svg" alt="Arrow icon" />
+          </div>
+          <div class="slider__inner" id="slider">
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Yingjie Gong</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">18yg24@queensu.ca</h2>
+              </div>
             </div>
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Analytics</h3>
-              <ul>
-                <li>Google Analytics</li>
-                <li>Firebase</li>
-                <li>Data science</li>
-                <li>Dashboard</li>
-              </ul>
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Yuen Zhou</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19yz57@queensu.ca</h2>
+              </div>
             </div>
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Consulting</h3>
-              <ul>
-                <li>Growth</li>
-                <li>First business</li>
-                <li>Startup</li>
-              </ul>
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Baisheng Zhang</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">17bz15@queensu.ca</h2>
+              </div>
             </div>
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Research</h3>
-              <ul>
-                <li>Market research</li>
-                <li>Competition reserach</li>
-                <li>Product reserach</li>
-              </ul>
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person4.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Xuan Xiong</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">18xx15@queensu.ca</h2>
+              </div>
             </div>
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Developing</h3>
-              <ul>
-                <li>WEB Design</li>
-                <li>WEB apps</li>
-                <li>Mobile apps</li>
-                <li>Smart home apps</li>
-              </ul>
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person5.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Poppy Li</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19xl12@queensu.ca</h2>
+              </div>
             </div>
-            <div class="popup__offer">
-              <h3 class="popup__offer-title">Product growing</h3>
-              <ul>
-                <li>Influencers</li>
-                <li>Invests</li>
-              </ul>
+            <div class="slider__item">
+              <img class="slider__item-image" src="./resources/images/persons/person6.jpg" alt="Team photo" />
+              <div class="slider__item-content">
+                <h2 class="slider__item-name">Zhimu Wang</h2>
+                <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19zw28@queensu.ca</h2>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- TEAM POPUP -->
-      <div class="popup" data-popup="team">
-        <div class="popup__inner">
-          <h2 class="popup__title">PEOPLE BEHIND THIS</h2>
-          <h3 class="popup__subtitle">Good team does not exist without good people</h3>
-          <div class="slider">
-            <div class="slider__arrow slider__arrow-left slider__arrow--disabled" data-follow="centered_y">
-              <img class="slider__arrow-icon" src="./resources/images/icons/arrow.svg" alt="Arrow icon" />
-            </div>
-            <div class="slider__arrow slider__arrow-right" data-follow="centered_y">
-              <img class="slider__arrow-icon" src="./resources/images/icons/arrow.svg" alt="Arrow icon" />
-            </div>
-            <div class="slider__inner" id="slider">
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Yingjie Gong</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;" >18yg24@queensu.ca</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Yuen Zhou</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19yz57@queensu.ca</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Baisheng Zhang</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">17bz15@queensu.ca</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person4.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Xuan Xiong</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">18xx15@queensu.ca</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person5.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Poppy Li</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19xl12@queensu.ca</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__item-image" src="./resources/images/persons/person6.jpg" alt="Team photo" />
-                <div class="slider__item-content">
-                  <h2 class="slider__item-name">Zhimu Wang</h2>
-                  <h2 class="slider__item-position" style="font-size:smaller; letter-spacing: 2px;">19zw28@queensu.ca</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <!-- ALL FIXED CONTENT (EG. HEADER, FOOTER) -->
+    <!-- HEADER -->
+    <header class="fixed-content-header">
+      <div class="flex flex--center">
+        <div class="burger" data-follow>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+        <div class="fixed-content-header__logo">ArchiTiger</div>
+      </div>
+      <button class="fixed-content-header__contact button button--primary" data-follow data-page="4">CONTACT</button>
+    </header>
+    <!-- PAGING -->
+    <div class="fixed-content-paging">
+      <div class="paging__page" data-page="0"></div>
+      <div class="paging__page section--hidden" data-page="1"></div>
+      <div class="paging__page section--hidden" data-page="2"></div>
+      <div class="paging__page section--hidden" data-page="3"></div>
+      <div class="paging__page section--hidden" data-page="4"></div>
+    </div>
+    <!-- FOOTER -->
+    <div class="fixed-content-footer">
+      <div class="social-links">
+        <a class="social-links__anchor" href="">
+          <img class="social-links__image" src="./resources/images/socials/instagram.svg" alt="Instagram logo"
+            width="20" height="20">
+        </a>
+      </div>
+      <div class="fixed-content-footer__copy">
+        <span class="footer-copy__date"></span>
+        <span class="footer-copy__name">ArchiTiger</span>
+      </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <div class="content-section" data-page="0">
+        <div class="configuration__letters configuration__letters--hidden">
+          <span class="configuration__letters-text">VICTOR</span>
+        </div>
+        <div class="scroll-letters">
+          <span class="scroll-letters__letter" title="S">S</span>
+          <span class="scroll-letters__letter" title="C">C</span>
+          <span class="scroll-letters__letter" title="R">R</span>
+          <span class="scroll-letters__letter" title="O">O</span>
+          <span class="scroll-letters__letter" title="L">L</span>
+          <span class="scroll-letters__letter" title="L">L</span>
         </div>
       </div>
-      <!-- ALL FIXED CONTENT (EG. HEADER, FOOTER) -->
-      <!-- HEADER -->
-      <header class="fixed-content-header">
-        <div class="flex flex--center">
-          <div class="burger" data-follow>
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
-          </div>
-          <div class="fixed-content-header__logo">ArchiTiger</div>
-        </div>
-        <button class="fixed-content-header__contact button button--primary" data-follow data-page="4">CONTACT</button>
-      </header>
-      <!-- PAGING -->
-      <div class="fixed-content-paging">
-        <div class="paging__page" data-page="0"></div>
-        <div class="paging__page section--hidden" data-page="1"></div>
-        <div class="paging__page section--hidden" data-page="2"></div>
-        <div class="paging__page section--hidden" data-page="3"></div>
-        <div class="paging__page section--hidden" data-page="4"></div>
-      </div>
-      <!-- FOOTER -->
-      <div class="fixed-content-footer">
-        <div class="social-links">
-          <a class="social-links__anchor" href="">
-            <img class="social-links__image" src="./resources/images/socials/instagram.svg" alt="Instagram logo" width="20" height="20">
-          </a>
-        </div>
-        <div class="fixed-content-footer__copy">
-          <span class="footer-copy__date"></span>
-          <span class="footer-copy__name">ArchiTiger</span>
-        </div>
-      </div>
-      <!-- MAIN CONTENT -->
-      <div class="content">
-        <div class="content-section" data-page="0">
-          <div class="configuration__letters configuration__letters--hidden">
-            <span class="configuration__letters-text">VICTOR</span>
-          </div>
-          <div class="scroll-letters">
-            <span class="scroll-letters__letter" title="S">S</span>
-            <span class="scroll-letters__letter" title="C">C</span>
-            <span class="scroll-letters__letter" title="R">R</span>
-            <span class="scroll-letters__letter" title="O">O</span>
-            <span class="scroll-letters__letter" title="L">L</span>
-            <span class="scroll-letters__letter" title="L">L</span>
-          </div>
-        </div>
-        <div class="content-section section--hidden" data-page="1">
-          <h1 class="content-section__title">ASSIGNMENT</h1>
+      <div class="content-section section--hidden" data-page="1">
+        <h1 class="content-section__title">ASSIGNMENT</h1>
         <div class="content-services">
           <div class="content-services__service">
             <img class="content-service__image" src="./resources/images/icons/marketing.svg" alt="Marketing icon" />
             <span class="content-service__text">Assn-1</span>
             <ul class="extended-services">
-              <a href="./A1/Presentation_A1.pdf" target="_blank"><li class="extended-services__service">Presentation PDF</li><br></a>
-              <a href="./A1/ArchiTiger_A1_Report.pdf" target="_blank"><li class="extended-services__service">Report PDF</li></a>
+              <a href="./A1/Presentation_A1.pdf" target="_blank">
+                <li class="extended-services__service">Presentation PDF</li><br>
+              </a>
+              <a href="./A1/ArchiTiger_A1_Report.pdf" target="_blank">
+                <li class="extended-services__service">Report PDF</li>
+              </a>
             </ul>
           </div>
           <div class="content-services__service">
             <img class="content-service__image" src="./resources/images/icons/analytics.svg" alt="Marketing icon" />
             <span class="content-service__text">Assn-2</span>
             <ul class="extended-services">
-              <li class="extended-services__service">Concrete</li>
-              <li class="extended-services__service">Architecture</li>
+              <a href="./A2/Presentation_A2.pdf" target="_blank">
+                <li class="extended-services__service">Presentation PDF</li><br>
+              </a>
+              <a href="./A2/ArchiTiger_A2.pdf" target="_blank">
+                <li class="extended-services__service">Report PDF</li>
+              </a>
             </ul>
           </div>
           <div class="content-services__service">
@@ -230,53 +241,57 @@
             </ul>
           </div>
         </div>
-          <button id="button_video" style="visibility: hidden;">
-          </button>
+        <button id="button_video" style="visibility: hidden;">
+        </button>
+      </div>
+      <div>
+
+        <button id="button_offers" style="visibility: hidden;">VIEW ALL SERVICES</button>
+      </div>
+      <div class="content-section section--hidden content-section--left-align" data-page="2">
+        <div class="content-holder--left-align">
+          <h1 class="content-section__title">MEET THE TEAM</h1>
+          <p class="content-section__text text-indent content-section__text-team">As a cohesive team, our members have
+            our own strengths and use the rich professional background knowledge in the respective fields to produce the
+            best project.</p>
+          <button class="content-section__button button button--secondary" id="button_team">VIEW TEAM</button>
         </div>
-        <div>
-          
-          <button id="button_offers" style="visibility: hidden;">VIEW ALL SERVICES</button>
-        </div>
-        <div class="content-section section--hidden content-section--left-align" data-page="2">
-          <div class="content-holder--left-align">
-            <h1 class="content-section__title">MEET THE TEAM</h1>
-            <p class="content-section__text text-indent content-section__text-team">As a cohesive team, our members have our own strengths and use the rich professional background knowledge in the respective fields to produce the best project.</p>
-            <button class="content-section__button button button--secondary" id="button_team">VIEW TEAM</button>
+        <div class="content-section__images">
+          <div class="content-section__image-holder">
+            <img class="content-section__image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
           </div>
-          <div class="content-section__images">
-            <div class="content-section__image-holder">
-              <img class="content-section__image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
-            </div>
-            <div class="content-section__image-holder">
-              <img class="content-section__image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
-            </div>
-            <div class="content-section__image-holder">
-              <img class="content-section__image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
-            </div>
-            <div class="content-section__image-holder">
-              <img class="content-section__image" src="./resources/images/persons/person5.jpg" alt="Team photo" />
-            </div>
+          <div class="content-section__image-holder">
+            <img class="content-section__image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
           </div>
-        </div>
-        <div class="content-section section--hidden" data-page="3">
-          <h1 class="content-section__title">LINKS</h1>
-          <p class="content-section__text">These are useful links and references for our project.</p>
-          <p class="content-section__text"></p>
-        </div>
-        <div class="content-section section--hidden" data-page="4">
-          <h1 class="content-section__title">CONTACT US</h1>
-          <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to hearing from you. You can also find us on social media below.</p>
-          <div class="content-section__buttons-holder">
-            <a class="content-section__button button button--icon" href="mailto:18xx15@queensu.ca">
-              <img class="button__image" src="./resources/images/icons/email.svg" alt="Email icon"/>
-              <span class="button__text">EMAIL US</span>
-              <span class="button__invisible-email">18xx15@queensu.ca</span>
-            </a>
+          <div class="content-section__image-holder">
+            <img class="content-section__image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
+          </div>
+          <div class="content-section__image-holder">
+            <img class="content-section__image" src="./resources/images/persons/person5.jpg" alt="Team photo" />
           </div>
         </div>
       </div>
-    </main>
+      <div class="content-section section--hidden" data-page="3">
+        <h1 class="content-section__title">LINKS</h1>
+        <p class="content-section__text">These are useful links and references for our project.</p>
+        <p class="content-section__text"></p>
+      </div>
+      <div class="content-section section--hidden" data-page="4">
+        <h1 class="content-section__title">CONTACT US</h1>
+        <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to
+          hearing from you. You can also find us on social media below.</p>
+        <div class="content-section__buttons-holder">
+          <a class="content-section__button button button--icon" href="mailto:18xx15@queensu.ca">
+            <img class="button__image" src="./resources/images/icons/email.svg" alt="Email icon" />
+            <span class="button__text">EMAIL US</span>
+            <span class="button__invisible-email">18xx15@queensu.ca</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <script type="module" src="./main.js"></script>
-	</body>
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
